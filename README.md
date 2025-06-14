@@ -5,6 +5,5 @@ Desenvolvi uma **landing page** focada em capturar e converter leads para uma em
 
 * **Aceleração da Transição Energética:** A landing page atua como um ponto de entrada digital, educando e incentivando a adoção de soluções solares. Ao facilitar o acesso à informação e desmistificar a energia solar, ela contribui diretamente para a expansão do uso de fontes renováveis, um passo fundamental na luta contra as mudanças climáticas.
 * **Fortalecimento da Marca e Geração de Negócios:** Uma landing page bem estruturada não apenas atrai potenciais clientes, mas também estabelece a empresa como uma autoridade no setor. Ela otimiza a captação de leads qualificados, transformando visitantes em oportunidades de negócio e impulsionando o crescimento da empresa no mercado de energia limpa.
-* **Educação e Conscientização:** Além de ser uma ferramenta de vendas, a página serve como um hub de informações sobre os benefícios da energia solar, como a redução de custos na conta de luz, a valorização do imóvel e o impacto positivo no meio ambiente. Isso aumenta a conscientização pública e encoraja uma mudança em direção a práticas mais sustentáveis.
 
 Este trabalho é uma peça-chave na estratégia digital da empresa, visando não só o sucesso comercial, mas também a promoção de um futuro mais sustentável e energeticamente eficiente.
