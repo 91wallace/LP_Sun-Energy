@@ -112,27 +112,31 @@
         <section id="quote-form" class="py-16 sm:py-24 bg-gray-50">
             <div class="max-w-xl mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center">Falta pouco para sua independência energética</h2>
-                <form class="mt-8 space-y-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <form action="https://formspree.io/f/xwpbbray" method="POST" class="mt-8 space-y-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
-                        <input type="text" id="name" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nome
+                        <input type="text" name="Nome" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </label>
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
-                        <input type="email" id="email" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <label for="email" class="block text-sm font-medium text-gray-700">E-mail
+                        <input type="email" name="email" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </label>
                     </div>
                     <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700">Telefone / WhatsApp</label>
-                        <input type="tel" id="phone" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Telefone / WhatsApp
+                        <input type="tel" name="Telefone" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                        </label>
                     </div>
                      <div>
-                        <label for="current-bill" class="block text-sm font-medium text-gray-700">Valor médio da sua conta de luz (o mesmo da calculadora)</label>
-                        <input type="text" id="current-bill" class="mt-1 block w-full px-3 py-2 bg-gray-200 border border-gray-300 rounded-md shadow-sm" readonly>
+                        <label for="current-bill" class="block text-sm font-medium text-gray-700">Valor médio da sua conta de luz
+                        <input type="text" name="Valor da Conta" id="current-bill" class="mt-1 block w-full px-3 py-2 bg-gray-200 border border-gray-300 rounded-md shadow-sm">
+                        </label>
                     </div>
                     <button type="submit" class="w-full cta-button bg-blue-700 text-white font-bold text-lg py-3 px-6 rounded-lg hover:bg-blue-800">
                         QUERO PARAR DE PERDER DINHEIRO
                     </button>
-                </form>
+                </form>              
             </div>
         </section>
 
