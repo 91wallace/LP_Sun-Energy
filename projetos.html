@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Sun Energy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-800">Sun Energy</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
+                <a href="projetos.html" class="nav-link text-blue-800 border-b-2 border-blue-800">Projetos</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+             <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Sobre Nós</a>
+            <a href="servicos.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Serviços</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Projetos</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contato</a>
+        </div>
+    </header>
+
+    <main class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold">Projetos que Geram Economia Real</h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Confira alguns dos sistemas de energia solar que tivemos o orgulho de instalar em Goiás.</p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden icon-card">
+                    <img src="https://placehold.co/600x400/cccccc/343a40?text=Projeto+Residencial+1" alt="[Imagem de um projeto residencial]" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Residência - Setor Bueno</h3>
+                        <p class="mt-2 text-gray-600">Sistema de 5.4 kWp, gerando uma economia mensal de R$ 750 para o cliente.</p>
+                    </div>
+                </div>
+                 <!-- Projeto 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden icon-card">
+                    <img src="https://placehold.co/600x400/cccccc/343a40?text=Projeto+Comercial" alt="[Imagem de um projeto comercial]" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Comércio - Av. 85</h3>
+                        <p class="mt-2 text-gray-600">Usina de 15 kWp, reduzindo em 92% a conta de luz de uma padaria.</p>
+                    </div>
+                </div>
+                 <!-- Projeto 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden icon-card">
+                    <img src="https://placehold.co/600x400/cccccc/343a40?text=Projeto+Residencial+2" alt="[Imagem de um projeto em um condomínio]" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Condomínio Horizontal</h3>
+                        <p class="mt-2 text-gray-600">Instalação de 8.2 kWp, com retorno do investimento em menos de 4 anos.</p>
+                    </div>
+                </div>
+                <!-- Adicionar mais projetos conforme necessário -->
+            </div>
+        </div>
+    </main>
+
+   <footer class="bg-gray-800 text-white pt-12 pb-8 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="font-bold text-lg">Sun Energy</h3>
+                <p class="mt-2 text-gray-400 text-sm">Transformando o sol de Goiás em economia para você.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Navegação</h3>
+                <ul class="mt-2 space-y-2 text-sm">
+                    <li><a href="sobre.html" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                    <li><a href="servicos.html" class="text-gray-400 hover:text-white">Serviços</a></li>
+                    <li><a href="projetos.html" class="text-gray-400 hover:text-white">Projetos</a></li>
+                    <li><a href="contato.html" class="text-gray-400 hover:text-white">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Contato</h3>
+                <ul class="mt-2 space-y-2 text-sm text-gray-400">
+                    <li>(62) 99999-8888</li>
+                    <li>contato@sunenergy.com.br</li>
+                    <li>Goiânia, GO</li>
+                </ul>
+            </div>
+             <div>
+                <h3 class="font-bold text-lg">Redes Sociais</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                    <a href="#" class="text-gray-400 hover:text-white">[FB]</a>
+                    <a href="#" class="text-gray-400 hover:text-white">[IG]</a>
+                    <a href="#" class="text-gray-400 hover:text-white">[IN]</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
+            <p>&copy; 2025 Sun Energy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
