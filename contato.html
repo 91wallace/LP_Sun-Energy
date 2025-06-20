@@ -126,7 +126,18 @@
             <p>&copy; 2025 Sun Energy. Todos os direitos reservados.</p>
         </div>
     </footer>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- LÓGICA DO MENU MOBILE ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
