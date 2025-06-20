@@ -1,7 +1,7 @@
----
-
+![image alt](https://github.com/91wallace/LP_Sun-Energy/blob/85bbf7249a288a3a886ac3f0e8686f468502ccf8/img/screenshot.png)
 
 ## Site Institucional para Empresa de Energia Solar Sun Energy
+---
 
 Desenvolvi um site focado em capturar e converter leads para uma empresa de Sun Energy. Este projeto é crucial por diversas razões:
 
