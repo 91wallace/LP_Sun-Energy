@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indique e Ganhe - Sun Energy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; color: #343a40; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .faq-question { transition: background-color 0.2s ease; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, padding 0.3s ease-out; }
+        .faq-item.active .faq-answer { max-height: 200px; padding-top: 1rem; padding-bottom: 1rem; }
+        .faq-item.active .faq-arrow { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-800">Sun Energy</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-800 transition duration-150 ease-in-out">Home</a>
+                <a href="sobre.html" class="text-gray-600 hover:text-blue-800 transition duration-150 ease-in-out">Sobre Nós</a>
+                <a href="servicos.html" class="text-gray-600 hover:text-blue-800 transition duration-150 ease-in-out">Serviços</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-blue-800 transition duration-150 ease-in-out">Projetos</a>
+                <a href="contato.html" class="text-gray-600 hover:text-blue-800 transition duration-150 ease-in-out">Contato</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="sobre.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Sobre Nós</a>
+            <a href="servicos.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Serviços</a>
+            <a href="projetos.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Projetos</a>
+            <a href="contato.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Contato</a>
+        </div>
+    </header>
+
+    <main class="py-16 sm:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold">Indique e Ganhe!</h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Ajude um amigo e receba por isso. Veja a baixo o valor que voce pode reber pela indicação.</p>
+            </div>
+
+            <!-- Formulário de Indicação -->
+            <div class="mt-16 max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <form action="https://formspree.io/f/xdkzppgb" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Seus Dados -->
+                        <div class="space-y-6">
+                            <h2 class="text-2xl font-bold text-blue-800 border-b pb-2">Seus Dados</h2>
+                            <div>
+                                <label for="your-name" class="block text-sm font-medium text-gray-700">Seu Nome</label>
+                                <input type="text" id="your-name" name="your-name" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="your-phone" class="block text-sm font-medium text-gray-700">Seu Telefone</label>
+                                <input type="tel" id="your-phone" name="your-phone" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="your-email" class="block text-sm font-medium text-gray-700">Seu E-mail</label>
+                                <input type="email" id="your-email" name="your-email" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Dados do Indicado -->
+                        <div class="space-y-6">
+                            <h2 class="text-2xl font-bold text-blue-800 border-b pb-2">Dados de Quem Você Indica</h2>
+                            <div>
+                                <label for="referred-name" class="block text-sm font-medium text-gray-700">Nome do Indicado</label>
+                                <input type="text" id="referred-name" name="referred-name" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="referred-contact" class="block text-sm font-medium text-gray-700">Contato do Indicado (Telefone ou WhatsApp)</label>
+                                <input type="text" id="referred-contact" name="referred-contact" required class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="referred-email" class="block text-sm font-medium text-gray-700">E-mail do Indicado (Opcional)</label>
+                                <input type="email" id="referred-email" name="referred-email" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="referred-bill" class="block text-sm font-medium text-gray-700">Valor da Conta (se souber)</label>
+                                <input type="text" id="referred-bill" name="referred-bill" placeholder="Ex: R$ 500" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button type="submit" class="w-full md:w-auto inline-block bg-blue-700 text-white font-bold text-lg py-3 px-10 rounded-lg hover:bg-blue-800 transition-all duration-300 ease-in-out">
+                            Enviar Indicação
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Seção de Perguntas e Respostas (FAQ) -->
+            <div class="mt-20 max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center">Perguntas Frequentes</h2>
+                <div class="mt-8 space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 hover:bg-gray-50">
+                            <span class="font-semibold text-lg text-gray-800">Como funciona o programa de indicação?</span>
+                            <span class="faq-arrow text-blue-800 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer px-4 text-gray-600">
+                            <p>É simples! Você preenche o formulário com seus dados e os dados do seu amigo. Nossa equipe entrará em contato com a pessoa indicada para apresentar uma proposta. Se seu amigo fechar negócio e instalar o sistema de energia solar conosco, você ganha uma recompensa.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 hover:bg-gray-50">
+                            <span class="font-semibold text-lg text-gray-800">O que eu ganho ao indicar?</span>
+                            <span class="faq-arrow text-blue-800 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer px-4 text-gray-600">
+                            <p>Para cada indicação que resultar em uma instalação concluída, você recebe de 2,5% a 4% do valor acordado no contrato, podendo alcançar até 2.000,00R$. </p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 hover:bg-gray-50">
+                            <span class="font-semibold text-lg text-gray-800">Quando eu recebo meu prêmio?</span>
+                            <span class="faq-arrow text-blue-800 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer px-4 text-gray-600">
+                            <p>A recompensa é paga em até 30 dias após a conclusão e quitação da instalação do sistema do seu amigo indicado. Entraremos em contato com você para combinar a melhor forma de pagamento.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-white rounded-lg shadow-sm border border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-4 hover:bg-gray-50">
+                            <span class="font-semibold text-lg text-gray-800">Posso indicar mais de uma pessoa?</span>
+                            <span class="faq-arrow text-blue-800 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer px-4 text-gray-600">
+                            <p>Sim! Não há limite para o número de indicações. Quanto mais amigos você indicar e que se tornarem nossos clientes, mais você ganha. É uma ótima oportunidade de gerar uma renda extra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-8 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="font-bold text-lg">Sun Energy</h3>
+                <p class="mt-2 text-gray-400 text-sm">Transformando o sol de Goiás em economia para você.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Navegação</h3>
+                <ul class="mt-2 space-y-2 text-sm">
+                    <li><a href="sobre.html" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                    <li><a href="servicos.html" class="text-gray-400 hover:text-white">Serviços</a></li>
+                    <li><a href="projetos.html" class="text-gray-400 hover:text-white">Projetos</a></li>
+                    <li><a href="contato.html" class="text-gray-400 hover:text-white">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Contato</h3>
+                <ul class="mt-2 space-y-2 text-sm text-gray-400">
+                    <li>(62) 99999-8888</li>
+                    <li>contato@sunenergy.com.br</li>
+                    <li>Goiânia, GO</li>
+                </ul>
+            </div>
+             <div>
+                <h3 class="font-bold text-lg">Redes Sociais</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                    <a href="#" class="text-gray-400 hover:text-white">[FB]</a>
+                    <a href="#" class="text-gray-400 hover:text-white">[IG]</a>
+                    <a href="#" class="text-gray-400 hover:text-white">[IN]</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-700">
+            <p>&copy; 2025 Sun Energy. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- LÓGICA DO MENU MOBILE ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // --- LÓGICA DO FAQ ---
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Fecha todos os outros itens antes de abrir o clicado
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Alterna a classe 'active' no item clicado
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
