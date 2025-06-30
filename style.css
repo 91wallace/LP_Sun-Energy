@@ -12,3 +12,47 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif; }
 @media (min-width: 768px) { .chart-container { height: 400px; } }
 input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 24px; height: 24px; background: #1e3a8a; cursor: pointer; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
 input[type=range]::-moz-range-thumb { width: 24px; height: 24px; background: #1e3a8a; cursor: pointer; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+
+body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; color: #343a40; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+        /* Estilos do Carrossel que precisam de classes dinâmicas */
+        .carousel-slide.active { opacity: 1; }
+        .carousel-dot.active { background-color: rgba(255, 255, 255, 1); }
+        .carousel-caption { background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); }
+
+        /* Estilos do Gráfico */
+        .chart-container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 300px; 
+            max-height: 400px; 
+        }
+        @media (min-width: 768px) { 
+            .chart-container { height: 400px; } 
+        }
+
+        /* Estilos do Slider da Calculadora (pseudo-elementos) */
+        input[type=range]::-webkit-slider-thumb { 
+            -webkit-appearance: none; 
+            appearance: none; 
+            width: 24px; 
+            height: 24px; 
+            background: #1e3a8a; 
+            cursor: pointer; 
+            border-radius: 50%; 
+            border: 2px solid white; 
+            box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+        }
+        input[type=range]::-moz-range-thumb { 
+            width: 24px; 
+            height: 24px; 
+            background: #1e3a8a; 
+            cursor: pointer; 
+            border-radius: 50%; 
+            border: 2px solid white; 
+            box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+        }
