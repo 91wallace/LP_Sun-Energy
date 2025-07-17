@@ -53,5 +53,9 @@ app.post('/send-email', async (req, res) => {
         await transporter.sendMail(mailOptions);
         res.status(200).send('Email enviado com sucesso!');
     } catch (error) {
-        console.error('Erro ao enviar email:', error
-            
+        console.error('Erro ao enviar email:', error);
+        res.status(500).send('Erro ao enviar email.');
+    }
+});
+
+// Inicia o servidor
