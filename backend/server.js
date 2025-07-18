@@ -57,5 +57,3 @@ app.post('/send-email', async (req, res) => {
         res.status(500).send('Erro ao enviar email.');
     }
 });
-
-// Inicia o servidor
